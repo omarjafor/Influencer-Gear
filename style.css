@@ -155,8 +155,39 @@ nav>ul>li{
     margin-right: 15px;
     float: right;
     color: rgba(224, 44, 109, 0.87);
+    display: inline-flex;
     font-size: 16px;
     font-weight: 700;
+}
+.featured{
+    padding: 70px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+.feature-title{
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.feature-description{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 20px 0px;
+}
+.feature-btn{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background: #E02C6D;
+    display: inline-flex;
+    padding: 10px 24px;
 }
 @media screen and (max-width: 576px) {
     header{
