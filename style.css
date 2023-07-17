@@ -76,10 +76,15 @@ nav>ul>li{
     padding: 30px 30px 30px 0px;
 }
 .ecomerce-logo{
-    padding: 70px 165px;
+    padding: 42px 165px;
     display: flex;
     justify-content: center;
     gap: 60px;
+    border: 1px solid;
+    border-image: linear-gradient(to right,transparent,rgba(128, 128, 128, 0.438),transparent);
+    border-left: 0;
+    border-right: 0;
+    border-image-slice: 1;
 }
 .logo-1{
     display: flex;
@@ -90,6 +95,60 @@ nav>ul>li{
     display: flex;
     justify-content: space-between;
     gap: 60px;
+}
+.popular-collection{
+    padding: 70px 196px;
+    text-align: center;
+}
+.pc-title{
+    padding: 30px;
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+}
+.popular-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.popular-cards .card{
+    width: 329px;
+    padding: 12px 0px;
+    text-align: center;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-text{
+    padding: 12px 14px;
+    text-align: left;
+}
+.card-title{
+    color: #18191F;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.card-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.checked {
+    color: orange;
+}
+.card-description{
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+    margin-top: 5px;
 }
 @media screen and (max-width: 576px) {
     header{
@@ -152,6 +211,7 @@ nav>ul>li{
         padding: 50px 20px;
         flex-direction: column;
         gap: 20px;
+        border: none;
     }
     .ecomerce-logo img{
         max-width: 65px;
