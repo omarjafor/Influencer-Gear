@@ -11,6 +11,7 @@ header{
 }
 .nav-title{
     color: #3A3A3A;
+    font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
 }
@@ -28,4 +29,46 @@ nav>ul>li{
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
+}
+.banner{
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 131px;
+}
+.banner-content{
+    max-width: 582px;
+}
+.banner-title{
+    color: #3A3A3A;
+    font-size: 52px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 70px;
+}
+.banner-description{
+    max-width: 505px;
+    margin: 10px 0px 30px 0px;
+    color: #3A3A3A;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+.btn{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 41px;
+    background: #E02C6D;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 8px;
+}
+.banner-img{
+    background-image: url('images/Circle\ design.svg');
+    padding: 30px 30px 30px 0px;
 }
