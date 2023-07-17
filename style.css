@@ -20,6 +20,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+nav .icon {
+    display: none;
+}
 nav > ul {
     display: flex;
 }
@@ -29,6 +32,32 @@ nav>ul>li{
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
+}
+@media screen and (max-width: 576px) {
+    header{
+        padding: 35px 16px;
+    }
+    nav .icon {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        position: absolute;
+        left: 16px;
+        top: 35px;
+    }
+    .nav-title{
+        font-size: 16px;
+    }
+    nav,
+    nav > ul {
+        flex-direction: column;
+    }
+    nav>ul>li:not(:last-child) {display: none;}
+    nav>ul .cart{
+        position: absolute;
+        right: 16px;
+        top: 35px;
+    }
 }
 .banner{
     margin-top: 51px;
@@ -71,6 +100,40 @@ nav>ul>li{
 .banner-img{
     background-image: url('images/Circle\ design.svg');
     padding: 30px 30px 30px 0px;
+}
+@media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .banner-content{
+        width: auto;
+    }
+    .banner-title{
+        font-size: 28px;
+        line-height: normal;
+        text-align: center;
+    }
+    .banner-description{
+        margin: 15px 20px 20px 18px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .banner-img{
+        padding: 20px 30px 30px 14px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .banner-img img{
+        max-width: 202px;
+    }
 }
 .ecomerce-logo{
     padding: 70px 165px;
