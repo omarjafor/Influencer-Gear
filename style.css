@@ -33,32 +33,6 @@ nav>ul>li{
     font-size: 16px;
     font-weight: 600;
 }
-@media screen and (max-width: 576px) {
-    header{
-        padding: 35px 16px;
-    }
-    nav .icon {
-        display: block;
-        font-size: 20px;
-        font-weight: 600;
-        position: absolute;
-        left: 16px;
-        top: 35px;
-    }
-    .nav-title{
-        font-size: 16px;
-    }
-    nav,
-    nav > ul {
-        flex-direction: column;
-    }
-    nav>ul>li:not(:last-child) {display: none;}
-    nav>ul .cart{
-        position: absolute;
-        right: 16px;
-        top: 35px;
-    }
-}
 .banner{
     margin-top: 51px;
     display: flex;
@@ -101,7 +75,47 @@ nav>ul>li{
     background-image: url('images/Circle\ design.svg');
     padding: 30px 30px 30px 0px;
 }
+.ecomerce-logo{
+    padding: 70px 165px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.logo-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.logo-2{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
 @media screen and (max-width: 576px) {
+    header{
+        padding: 35px 16px;
+    }
+    nav .icon {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        position: absolute;
+        left: 16px;
+        top: 35px;
+    }
+    .nav-title{
+        font-size: 16px;
+    }
+    nav,
+    nav > ul {
+        flex-direction: column;
+    }
+    nav>ul>li:not(:last-child) {display: none;}
+    nav>ul .cart{
+        position: absolute;
+        right: 16px;
+        top: 35px;
+    }
     .banner{
         flex-direction: column-reverse;
         gap: 30px;
@@ -134,9 +148,20 @@ nav>ul>li{
     .banner-img img{
         max-width: 202px;
     }
-}
-.ecomerce-logo{
-    padding: 70px 165px;
-    display: flex;
-    justify-content: space-evenly;
+    .ecomerce-logo{
+        padding: 50px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ecomerce-logo img{
+        max-width: 65px;
+    }
+    .logo-1{
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+    .logo-2{
+        justify-content: space-evenly;
+        gap: 0px;
+    }
 }
