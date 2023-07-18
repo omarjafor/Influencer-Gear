@@ -194,7 +194,34 @@ nav>ul>li{
     display: inline-flex;
     padding: 10px 24px;
 }
-@media screen and (max-width: 576px) {
+footer{
+    background: #0A0826;
+    text-align: center;
+    color: #FFF;
+}
+.footer-title{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.footer-description{
+    color: #D9DBE1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.social{
+    margin-top: 15px;
+    padding-bottom: 50px;
+}
+.social .fab{
+    color: white;
+    font-weight: bold;
+    margin-right: 16px;
+}
+@media screen and (max-width: 576px) { /* ----------------------------------------- */
     header{
         padding: 35px 16px;
     }
@@ -277,7 +304,7 @@ nav>ul>li{
     .popular-cards{
         grid-template-columns: 1fr;
         grid-gap: 20px;
-        padding: 15px 17px;
+        padding: 15px 15px;
     }
     .see-more{
         margin-top: 20px;
