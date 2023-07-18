@@ -166,8 +166,12 @@ nav>ul>li{
     align-items: center;
     gap: 96px;
 }
+.feature-img{
+    border-radius: 7px;
+}
 .feature-title{
     color: #0A0826;
+    font-family: Poppins;
     font-size: 38px;
     font-weight: 700;
     line-height: 60px;
@@ -178,6 +182,7 @@ nav>ul>li{
     font-weight: 700;
     line-height: 28px;
     margin: 20px 0px;
+    max-width: 501px;
 }
 .feature-btn{
     color: #FFF;
@@ -277,5 +282,25 @@ nav>ul>li{
     .see-more{
         margin-top: 20px;
         font-size: 15px;
+    }
+    .featured{
+        padding: 0px;
+        margin-top: 100px;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+    .feature-text, .feature-img, .feature-description{
+        text-align: center;
+    }
+    .feature-img img{
+        max-width: 300px;
+    }
+    .feature-title{
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .feature-description{
+        margin: 20px 50px;
     }
 }
